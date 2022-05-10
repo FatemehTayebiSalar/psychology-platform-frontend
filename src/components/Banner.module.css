@@ -1,14 +1,15 @@
-*{
-    direction: rtl;
-    text-align: right;
-}
+
 .container {
-    margin: 100px 100px;
-    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px;
+    background-color: #556b2f;
+    
   }
   
   .container img {
     width: 35%;
+    
   }
   
   .textContainer {

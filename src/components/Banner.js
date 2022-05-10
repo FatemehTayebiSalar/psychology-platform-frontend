@@ -5,14 +5,15 @@ import banner from "../images/banner.jpg";
 const Banner = () => {
     return (
         <div className={styles.container}>
-            
+            <img src={banner} alt="Banner" />
             <div className={styles.textContainer}>
+
                 <h1>اسم سایت</h1>
                 <p>
                     توضیح راجع به  <span>محتویات سایت</span>
                 </p>
             </div>
-            <img src={banner} alt="Banner" />
+            
             
         </div>
     );
