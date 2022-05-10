@@ -1,0 +1,35 @@
+*{
+    direction: rtl;
+    text-align: right;
+}
+.container {
+    margin: 100px 100px;
+    width: 70%;
+  }
+  
+  .container img {
+    width: 35%;
+  }
+  
+  .textContainer {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+  }
+  
+  .textContainer h1 {
+    font-size: 5rem;
+    color: #f5efe8;
+  }
+  
+  .textContainer p {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    color: #f5efe8;
+  }
+  
+  .textContainer span {
+    color: #47230d;
+    font-weight: bold;
+  }
+  
