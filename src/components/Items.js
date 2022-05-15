@@ -8,7 +8,7 @@ import Psychologists from "../images/Psychologists.png";
 import Meditation from "../images/Meditation.png";
 
 const Items = () => {
-    const [data , setData] = useState(
+    const data = useState(
         {id:1,image:Podcast,title:"گوش کنیم"},
         {id:2,image:Meditation, title:"آرام شویم"},
         {id:3,image:Psychologists, title:"حرف بزنیم" },
@@ -16,7 +16,7 @@ const Items = () => {
         
     return (
         <div className={styles.container}>
-               {setData(item => <Item key={data.id} id={data.id} image={data.image} title={data.title}/>)}
+               {data.map(item => <Item key={data.id} id={data.id} image={data.image} title={data.title}/>)}
         </div>
     );
 };
