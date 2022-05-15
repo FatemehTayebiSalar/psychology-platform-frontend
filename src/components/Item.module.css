@@ -1,0 +1,18 @@
+.container{
+    margin: 10px;
+    background-color: #c2aea6;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(189, 189, 189);
+    width: 300px;
+}
+
+.container img{
+    width: 300px;
+    height: 200px;
+}
+
+.container h3{
+    color: #ffff;
+    margin: 30px 20px 20px;
+}

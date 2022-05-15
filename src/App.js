@@ -1,7 +1,9 @@
 import React from 'react'
+import Landing from './components/Landing.js';
 //import {Route,Routes} from "react-router-dom";
 import Navbar from './components/Navbar.js'
-import Landing from "./components/Landing.js";
+
+
 
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
     <div >
        <Navbar />
        <Landing />
+       
+        
     </div>
   );
 }
