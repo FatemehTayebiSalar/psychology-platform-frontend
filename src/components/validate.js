@@ -39,7 +39,7 @@ export const validate = (data,type) =>{
         if(data.isAccepted){
             delete errors.isAccepted
         }else{
-            errors.isAccepted = "قوانین ما را می پذیرید"
+            errors.isAccepted = "پذیرش قوانین الزامی می باشد."
         }
     
     

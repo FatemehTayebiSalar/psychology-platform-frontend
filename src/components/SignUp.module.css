@@ -1,7 +1,12 @@
+*{
+    direction: rtl;
+    text-align: right;
+}
+
 .container{
     display: flex;
     justify-content: center;
-    background-color: #f9f9f9;
+    
     min-height: 100vh;
     align-items: center;
 }
@@ -13,7 +18,7 @@
     margin: 50px;
     border-radius: 10px;
     height: fit-content;
-    background-color: #fff;
+    background-color: #151618;
 }
 
 .header{
