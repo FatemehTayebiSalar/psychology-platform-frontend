@@ -9,6 +9,7 @@ import Events from "../images/Events.png";
 import Psychologists from "../images/Psychologists.png";
 import Meditation from "../images/Meditation.png";
 
+
 class Items extends Component {
     constructor(){
         super();
@@ -29,5 +30,6 @@ class Items extends Component {
         );
     }
 }
+
 
 export default Items;
