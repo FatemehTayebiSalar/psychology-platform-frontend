@@ -1,5 +1,5 @@
 import React from 'react';
-//import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import styles from "./Navbar.module.css";
 import logo from "../images/logo.png"
 
@@ -11,17 +11,17 @@ const Navbar = () => {
             
             <div className ={styles.listContainer}>
                 <ul className={styles.list}>
-                    <li ><img className={styles.logo} src={logo} alt="Logo" /></li>
-                    <li><a >صحبت با متخصصان</a></li>
-                    <li><a>گوش کنیم</a></li>
-                    <li><a>آرام شویم</a></li>
+                    <li ><Link to="/"><img className={styles.logo} src={logo} alt="Logo" /></Link></li>
+                    <li><Link to="/">صحبت با متخصصان</Link></li>
+                    <li><Link to="/">گوش کنیم</Link></li>
+                    <li><Link to="/">آرام شویم</Link></li>
                     
                 </ul>
             </div>
             <div className ={styles.profileContainer}>
                 <ul className={styles.profileItems}>
-                    <li><a>ثبت نام</a></li>
-                    <li><a>ورود</a></li>
+                    <li><Link to="/signup">ثبت نام</Link></li>
+                    <li><Link to="/login">ورود</Link></li>
                 </ul>
             </div>
             
