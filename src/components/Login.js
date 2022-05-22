@@ -40,7 +40,7 @@ const Login= () => {
         event.preventDefault();
         notify()
         if(!Object.keys(errors).length){
-            notify("وارد حساب کاربری خود شدید","success")
+            notify("ورود با موفقیت انجام شد.","success")
         }else{
             notify("اطلاعات وارد شده صحیح نمی باشند","error")
             setTouched({
