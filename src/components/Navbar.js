@@ -11,10 +11,13 @@ const Navbar = () => {
             
             <div className ={styles.listContainer}>
                 <ul className={styles.list}>
-                    <li ><Link to="/"><img className={styles.logo} src={logo} alt="Logo" /></Link></li>
-                    <li><Link to="/">صحبت با متخصصان</Link></li>
-                    <li><Link to="/">گوش کنیم</Link></li>
-                    <li><Link to="/">آرام شویم</Link></li>
+                    <li ><img className={styles.logo} src={logo} alt="Logo" /></li>
+                    <li><Link to="/" >متخصصان</Link></li>
+                    <li><Link to="/">پادکست </Link></li>
+                    <li><Link to="/">مدیتیشن</Link></li>
+                    <li><Link to="/">رویدادها</Link></li>
+                    <li><Link to="/">درباره ی ما</Link></li>
+
                     
                 </ul>
             </div>
