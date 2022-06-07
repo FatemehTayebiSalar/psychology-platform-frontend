@@ -15,4 +15,15 @@
 .container h3{
     color: #ffff;
     margin: 30px 20px 20px;
+    text-align: center !important;
+    text-decoration-style: none;
 }
+
+.container h3 a {
+    text-decoration: none;
+}
+
+
+
+
+
