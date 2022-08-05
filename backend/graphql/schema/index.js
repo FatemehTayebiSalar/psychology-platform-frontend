@@ -93,7 +93,7 @@ type RootQuery {
     videos: [Video!]!
     podcasts: [Podcast!]!
     psychologists: [Psychologist!]!
-    login(email: String! , password: String!): AuthData!
+   
 }
 
 type RootMutation{

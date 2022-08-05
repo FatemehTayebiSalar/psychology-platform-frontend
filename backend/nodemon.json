@@ -1,0 +1,7 @@
+{
+    "env":{
+        "MONGO_USER":"Bavakuser",
+        "MONGO_PASSWORD":"Z9y2tRtn1MC3aVK9",
+        "MONGO_DB":"Bavak-DB"
+    }
+}
