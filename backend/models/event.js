@@ -1,34 +1,43 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-//پنل کاربری یا ارسال ایمیل برای اطلاع روانشناس از نوبت ها
-const psychologistSchema = new Schema({
-    name:{
+
+const eventSchema = new Schema({
+    title:{
         type: String,
         required: true
     },
-    degree: {
+    information: {
         type: String,
         required: true
     },
-    city: {
+    organizer: {
         type: String,
+        required: true
+    },
+    date: {
+        type: Date,
         required: true
     },
     address: {
         type: String,
         required: true
     },
-    phoneNumber: {
-        type: String,
-        required: true
-    },
-    visitAmount: {
+    price: {
         type: Number,
         required: true
-    }
-    //visit-list
+    },
+    capacity: {
+        type: Number,
+        required: true
+    },
+     // coverImage: {
+    //     type: String,
+    //     required: true
+    // },
+    
+
     
 });
 
-module.exports = mongoose.model('Psychologist' , psychologistSchema);
+module.exports = mongoose.model('Event' , eventSchema);
