@@ -1,9 +1,9 @@
-// const authResolver = require('./auth');
+const authResolver = require('./auth');
 const eventsResolver = require('./events');
 // const bookingResolver = require('./booking');
 
 const rootResolver = {
-    // ...authResolver,
+    ...authResolver,
     ...eventsResolver
     // ...bookingResolver
 };

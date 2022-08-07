@@ -88,11 +88,18 @@ input UserInput {
     password: String!
 }
 
+type AuthData{
+    userId: ID!
+    token: String!
+    tokenExpiration: Int!
+}
+
 type RootQuery {
     events: [Event!]!
     videos: [Video!]!
     podcasts: [Podcast!]!
     psychologists: [Psychologist!]!
+    login(email: String! , password: String!): AuthData!
    
 }
 
