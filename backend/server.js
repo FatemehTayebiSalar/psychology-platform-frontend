@@ -26,6 +26,7 @@ mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${
 }@cluster0.ymcmk.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
 ).then(() =>{
    app.listen(3000); 
+   console.log("connect");
 })
 .catch(err =>{
     console.log(err);
