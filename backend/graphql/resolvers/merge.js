@@ -52,6 +52,12 @@ const transformPodcast = podcast => {
     };
 };
 
+const transformVideo = video => {
+    return {
+        ...video._doc,
+        _id: video.id,
+    };
+};
 
 // const transformBooking = booking => {
 //     return { 
@@ -73,3 +79,4 @@ const transformPodcast = podcast => {
 // exports.transformBooking = transformBooking;
 exports.transformEvent = transformEvent;
 exports.transformPodcast = transformPodcast;
+exports.transformVideo = transformVideo;
