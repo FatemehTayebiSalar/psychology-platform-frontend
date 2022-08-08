@@ -1,5 +1,6 @@
 const Event = require('../../models/event');
 // const User = require('../../models/user');
+//const Podcast = require('../../models/podcast');
 const { dateToString } = require('../../helpers/date');
 
 const events = async eventIds => {
@@ -35,11 +36,19 @@ const singleEvent = async eventId =>{
 //     }
 // };
 
+
 const transformEvent = event => {
     return {
         ...event._doc,
         _id: event.id,
         date: dateToString(event._doc.date)
+    };
+};
+
+const transformPodcast = podcast => {
+    return {
+        ...podcast._doc,
+        _id: podcast.id,
     };
 };
 
@@ -63,3 +72,4 @@ const transformEvent = event => {
 
 // exports.transformBooking = transformBooking;
 exports.transformEvent = transformEvent;
+exports.transformPodcast = transformPodcast;

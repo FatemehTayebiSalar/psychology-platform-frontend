@@ -1,10 +1,12 @@
 const authResolver = require('./auth');
 const eventsResolver = require('./events');
+const podcastsResolver = require('./podcasts')
 // const bookingResolver = require('./booking');
 
 const rootResolver = {
     ...authResolver,
-    ...eventsResolver
+    ...eventsResolver,
+    ...podcastsResolver
     // ...bookingResolver
 };
 
