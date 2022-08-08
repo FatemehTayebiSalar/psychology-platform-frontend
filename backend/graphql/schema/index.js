@@ -88,6 +88,15 @@ input UserInput {
     password: String!
 }
 
+input PsychologistInput{
+    name: String!
+    degree: String!
+    city: String!
+    address: String!
+    phoneNumber: String!
+    visitAmount: Float!
+}
+
 type AuthData{
     userId: ID!
     token: String!
@@ -108,6 +117,7 @@ type RootMutation{
     createPodcast(podcastInput:PodcastInput): Podcast
     createVideo(videoInput:VideoInput): Video
     createUser(userInput: UserInput) : User
+    createPsychologist(psychologistInput: PsychologistInput) : Psychologist
     
 }
 

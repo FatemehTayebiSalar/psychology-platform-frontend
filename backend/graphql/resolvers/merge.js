@@ -59,6 +59,14 @@ const transformVideo = video => {
     };
 };
 
+const transformPsychologist = psychologist => {
+    return {
+        ...psychologist._doc,
+        _id: psychologist.id,
+    };
+};
+
+
 // const transformBooking = booking => {
 //     return { 
 //         ...booking._doc,
@@ -80,3 +88,4 @@ const transformVideo = video => {
 exports.transformEvent = transformEvent;
 exports.transformPodcast = transformPodcast;
 exports.transformVideo = transformVideo;
+exports.transformPsychologist = transformPsychologist;
