@@ -30,7 +30,7 @@ type Video {
     information: String!
     price: Float!
 }
-
+ //عکس مشاور فراموش نشه
 type Psychologist{
     _id: ID!
     name: String!
