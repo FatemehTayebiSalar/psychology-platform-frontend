@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
-import {HiOutlineLogin} from 'react-icons/fa';
+// import {HiOutlineLogin} from 'react-icons/fa';
 
 export const Nav = styled.nav`
     background: #fff;
@@ -60,10 +60,10 @@ export const Bars = styled(FaBars)`
     }
 `;
 
-export const LoginIcon = styled(HiOutlineLogin)`
-    display: none;
-    color: black;
-`;
+// export const LoginIcon = styled(HiOutlineLogin)`
+//     display: none;
+//     color: black;
+// `;
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;

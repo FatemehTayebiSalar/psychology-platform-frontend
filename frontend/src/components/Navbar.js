@@ -10,8 +10,7 @@ import {
     NavMenu,
     NavBtn,
     NavBtnLink,
-    NavLogo,
-    LoginIcon
+    NavLogo
 } from './NavbarElements';
 
 
@@ -34,7 +33,7 @@ const Navbar = () => {
                 </NavMenu>
                 <NavBtn>
                     <NavBtnLink to="/signup">ثبت نام</NavBtnLink>
-                    <NavBtnLink to="/login">ورود<LoginIcon/>
+                    <NavBtnLink to="/login">ورود
                     </NavBtnLink>
                 </NavBtn>
             </Nav>
