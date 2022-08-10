@@ -25,11 +25,11 @@ const Navbar = () => {
                 </NavLogo>
                 <Bars />
                 <NavMenu>
-                    <NavLink to="/" activeStyle>خانه</NavLink>
-                    <NavLink to="/" activeStyle>متخصصان</NavLink>
-                    <NavLink to="/" activeStyle>رویداد ها</NavLink>
-                    <NavLink to="/" activeStyle>پادکست ها</NavLink>
-                    <NavLink to="/" activeStyle>ویدیو ها</NavLink>
+                    <NavLink to="/" activeStyle ={{ color:'black' }}>خانه</NavLink>
+                    <NavLink to="/" activeStyle ={{ color:'black' }}>متخصصان</NavLink>
+                    <NavLink to="/" activeStyle ={{ color:'black' }}>رویداد ها</NavLink>
+                    <NavLink to="/" activeStyle ={{ color:'black' }}>پادکست ها</NavLink>
+                    <NavLink to="/" activeStyle ={{ color:'black' }}>ویدیو ها</NavLink>
                     
                 </NavMenu>
                 <NavBtn>

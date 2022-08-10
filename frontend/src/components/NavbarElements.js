@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
-// import {HiOutlineLogin} from 'react-icons/fa';
 
 export const Nav = styled.nav`
     background: #fff;
-    height: 80px;
+    height: 55px;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc((100vW - 1100px) / 2);
     z-index: 10;
+
+
 `;
 
 export const NavLogo = styled(Link)`
