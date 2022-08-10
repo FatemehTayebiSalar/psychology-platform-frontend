@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 // import {Link, NavLink} from 'react-router-dom';
 // import styles from "./Navbar.module.css";
 // import logo from "../images/logo.png"
@@ -32,8 +33,8 @@ const Navbar = () => {
                     
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/signup">ثبت نام</NavBtnLink>
-                    <NavBtnLink to="/login">ورود
+                    {/* <NavBtnLink to="/signup">ثبت نام</NavBtnLink> */}
+                    <NavBtnLink to="/login"><Icon icon="heroicons-outline:login"  />ورود
                     </NavBtnLink>
                 </NavBtn>
             </Nav>
