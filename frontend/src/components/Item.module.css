@@ -1,22 +1,26 @@
 .container{
-    margin: 10px;
-    background-color: #c2aea6;
-    border-radius: 10px;
-    overflow: hidden;
     box-shadow: 5px 5px 10px rgb(189, 189, 189);
-    width: 300px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
 }
 
 .container img{
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
+    max-height:100%;
+    display: block;
 }
 
+
+
 .container h3{
-    color: #ffff;
-    margin: 30px 20px 20px;
+    color: black;
+    /* margin: 30px 20px 20px; */
     text-align: center !important;
-    text-decoration-style: none;
+    /* text-decoration-style: none; */
+    position: absolute;
+    
 }
 
 .container h3 a {

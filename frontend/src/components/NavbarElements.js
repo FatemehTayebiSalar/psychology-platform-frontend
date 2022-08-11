@@ -61,10 +61,6 @@ export const Bars = styled(FaBars)`
     }
 `;
 
-// export const LoginIcon = styled(HiOutlineLogin)`
-//     display: none;
-//     color: black;
-// `;
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
@@ -80,7 +76,6 @@ export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
     margin-right: 24px;
-
     justify-content: flex-end;
     width: 100vw;
 

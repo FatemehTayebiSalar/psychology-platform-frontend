@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styles from "./Items.module.css";
+import styles from "./Categories.module.css";
 import Card from './Item';
 
 
@@ -10,15 +10,15 @@ import Psychologists from "../images/Psychologists.png";
 import Meditation from "../images/Meditation.png";
 
 
-class Items extends Component {
+class Categories extends Component {
     constructor(){
         super();
         this.state={
             Data:[
-                {id:1,image:Podcast,title:"گوش کنیم"},
-                {id:2,image:Meditation, title:"آرام شویم"},
-                {id:3,image:Psychologists, title:"حرف بزنیم" },
-                {id:4,image:Events, title:"شرکت کنیم" }
+                {id:1,image:Podcast,title:"تربیت مغز"},
+                {id:2,image:Meditation, title:"باشگاه"},
+                {id:3,image:Psychologists, title:"آرامش روح" },
+                {id:4,image:Events, title:"دسته جمعی" }
             ]
         }
     }
@@ -32,4 +32,4 @@ class Items extends Component {
 }
 
 
-export default Items;
+export default Categories;
