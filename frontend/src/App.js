@@ -5,7 +5,7 @@ import Navbar from './components/Navbar.js'
 import SignUp from './components/SignUp.js';
 import Login from './components/Login.js';
 import StartPage from './components/StartPage.js';
-
+import './fonts/IRANSansWeb.ttf'
 
 
 
