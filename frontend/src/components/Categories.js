@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import styles from "./Categories.module.css";
-import Card from './Item';
+import Category from './Item';
 
 
 import Podcast from "../images/Podcast.png";
@@ -25,7 +25,12 @@ class Categories extends Component {
     render() {
         return (
             <div className={styles.container}>
-               {this.state.Data.map(item => <Card id={item.id} key={item.id} image={item.image} title={item.title}/>)}
+                
+                <h1><hr/>دسته بندی ها</h1>
+                <div className={styles.firstCat}>
+                    {this.state.Data.map(item => <Category  id={item.id} key={item.id} image={item.image} title={item.title}/>)}
+                </div>
+                
             </div>
         );
     }

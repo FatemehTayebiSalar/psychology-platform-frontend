@@ -1,8 +1,37 @@
 .container{
-    width: 80vW;
-    border-radius: 50%;
+    border: 1px black solid;
+    border-radius: 2%;
     display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    
+    
+}
+
+.container h1{
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.firstCat{
+    flex-direction: row;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    margin: 60px;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container h1 hr{
+    color: black;
+    background-color: black;
+    height: .1;
+    border : black;
+    border-radius: 2px;
 }

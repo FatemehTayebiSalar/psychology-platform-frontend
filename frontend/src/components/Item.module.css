@@ -1,14 +1,18 @@
 .container{
-    box-shadow: 5px 5px 10px rgb(189, 189, 189);
-    width: 200px;
-    height: 200px;
+    margin: 20px 20px;
+    width: 300px;
+    height: 300px;
+    display: flex;
     position: relative;
+    
     
 }
 
 .container img{
     max-width: 100%;
     max-height:100%;
+    object-fit: cover;
+    border-radius: 30%;
     display: block;
 }
 
@@ -16,14 +20,14 @@
 
 .container h3{
     color: black;
-    /* margin: 30px 20px 20px; */
-    text-align: center !important;
-    /* text-decoration-style: none; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
-    
 }
 
-.container h3 a {
+.container h3 a{
+    color: black;
     text-decoration: none;
 }
 
