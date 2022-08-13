@@ -1,24 +1,19 @@
 .container{
-    margin: 20px 20px;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    position: relative;
-    
-    
+    padding: 0;
+    margin: 0;
 }
-
-.container img{
+.imageStyle{
     max-width: 100%;
     max-height:100%;
-    object-fit: cover;
-    border-radius: 30%;
-    display: block;
+    /* object-fit: cover;
+    border-radius: 10%; */
+    /* display: block; */
+    
 }
 
 
 
-.container h3{
+.titleStyle{
     color: black;
     top: 50%;
     left: 50%;
@@ -26,7 +21,7 @@
     position: absolute;
 }
 
-.container h3 a{
+.titleStyle a{
     color: black;
     text-decoration: none;
 }

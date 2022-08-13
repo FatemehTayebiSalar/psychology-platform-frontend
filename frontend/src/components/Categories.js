@@ -8,13 +8,14 @@ import Podcast from "../images/Podcast.png";
 import Events from "../images/Events.png";
 import Psychologists from "../images/Psychologists.png";
 import Meditation from "../images/Meditation.png";
+import FreeCategory from './FreeCategory';
 
 
 class Categories extends Component {
     constructor(){
         super();
         this.state={
-            Data:[
+            firstData:[
                 {id:1,image:Podcast,title:"تربیت مغز"},
                 {id:2,image:Meditation, title:"باشگاه"},
                 {id:3,image:Psychologists, title:"آرامش روح" },
@@ -26,10 +27,11 @@ class Categories extends Component {
         return (
             <div className={styles.container}>
                 
-                <h1><hr/>دسته بندی ها</h1>
+                <h1 className={styles.mainHeader}><hr/>دسته بندی ها</h1>
                 <div className={styles.firstCat}>
-                    {this.state.Data.map(item => <Category  id={item.id} key={item.id} image={item.image} title={item.title}/>)}
+                    {this.state.firstData.map(item => <Category size={"300px"} id={item.id} key={item.id} image={item.image} title={item.title}/>)}
                 </div>
+                <FreeCategory />
                 
             </div>
         );

@@ -2,12 +2,12 @@ import React from 'react';
 // import Banner from "./Banner.js"
 import Footer from './Footer.js';
 import Categories from './Categories.js';
-import Slider from './Slider/Slider.js';
+import MainSlider from './MainSlider.js';
 
 const Landing = () => {
     return (
         <div>
-            <Slider/>
+            <MainSlider/>
             <Categories />
             <Footer />
         </div>

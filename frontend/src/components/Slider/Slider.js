@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
-import './Slider.css'
-import BtnSlider from './BtnSlider'
-import dataSlider from './dataSlider'
+import React, {useState} from 'react';
+import './Slider.css';
+import BtnSlider from './BtnSlider';
+import Item from '../Item';
 
-export default function Slider() {
+
+export default function Slider({dataSlider}) {
 
     const [slideIndex, setSlideIndex] = useState(1)
 
@@ -31,7 +32,7 @@ export default function Slider() {
 
     return (
         <div className="container-slider">
-            {dataSlider.map((obj, index) => {
+            {/* {dataSlider.map((obj, index) => {
                 return (
                     <div
                     key={obj.id}
@@ -42,15 +43,24 @@ export default function Slider() {
                         />
                     </div>
                 )
-            })}
+            })} */}
+            <div>
+            {dataSlider.map(obj => { 
+                <Item 
+                    className={slideIndex === obj.id + 1 ? "slide active-anim" : "slide"}
+                    size={"100vW"}
+                    id={obj.id}
+                    key={obj.id}
+                    image={obj.image}
+                    title={obj.title}/> })}</div>
             <BtnSlider moveSlide={nextSlide} direction={"next"} />
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
             <div className="container-dots">
-                {Array.from({length: 4}).map((item, index) => (
+                {Array.from({length: dataSlider.length}).map((item, index) => (
                     <div 
-                    onClick={() => moveDot(4 - index)}
-                    className={slideIndex === 4-index ? "dot active" : "dot"}
+                    onClick={() => moveDot(dataSlider.length - index)}
+                    className={slideIndex === dataSlider.length - index ? "dot active" : "dot"}
                     ></div>
                 ))}
             </div>

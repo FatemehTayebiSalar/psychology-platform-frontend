@@ -9,12 +9,21 @@ class Item extends Component {
 
     
     render() {
+        const {image , title ,id , size} = this.props;
+
+        const containerStyle = {
+            width: size,
+            height: size,
+            display: "flex",
+            position: "relative",
+            margin:"10px"
+          };
         
-        const {image , title ,id} = this.props;
+        
         return (
-            <div className={styles.container}>
-                <img src={image} alt="Items" />
-                <h3><Link to={`/products/${id}`}>{title}</Link></h3>
+            <div style={containerStyle}>
+                <img className={styles.imageStyle} src={image} alt="Items" />
+                <h3 className={styles.titleStyle}><Link to={`/products/${id}`}>{title}</Link></h3>
             </div>
         );
     }

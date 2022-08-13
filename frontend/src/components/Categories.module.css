@@ -4,31 +4,30 @@
     display: flex;
     margin-top: 10px;
     flex-direction: column;
-    
-    
 }
 
-.container h1{
+.mainHeader{
     
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto!important;
+    margin-right: auto !important;
     
     
 }
 
 .firstCat{
-    flex-direction: row;
+    /* grid-template:100px / auto auto auto auto; */
     display: flex;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.container h1 hr{
+
+
+.mainHeader hr{
     color: black;
     background-color: black;
     height: .1;
