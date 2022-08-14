@@ -1,13 +1,13 @@
 import React from 'react';
 // import Banner from "./Banner.js"
 import Footer from './Footer.js';
-import Categories from './Categories.js';
-import MainSlider from './MainSlider.js';
+import Categories from './Categories/Categories.js';
+import Slider from './Slider/Slider.js';
 
 const Landing = () => {
     return (
         <div>
-            <MainSlider/>
+            <Slider />
             <Categories />
             <Footer />
         </div>

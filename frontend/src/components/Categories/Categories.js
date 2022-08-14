@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
-import styles from "./Categories.module.css";
-import Category from './Item';
+import styles from "./Styles/Categories.module.css";
+import Category from '../Item';
 
 
-import Podcast from "../images/Podcast.png";
-import Events from "../images/Events.png";
-import Psychologists from "../images/Psychologists.png";
-import Meditation from "../images/Meditation.png";
+import Podcast from "../../images/Podcast.png";
+import Events from "../../images/Events.png";
+import Psychologists from "../../images/Psychologists.png";
+import Meditation from "../../images/Meditation.png";
 import FreeCategory from './FreeCategory';
+import NewestCategory from './NewestCategory';
 
 
 class Categories extends Component {
@@ -29,9 +30,10 @@ class Categories extends Component {
                 
                 <h1 className={styles.mainHeader}><hr/>دسته بندی ها</h1>
                 <div className={styles.firstCat}>
-                    {this.state.firstData.map(item => <Category size={"300px"} id={item.id} key={item.id} image={item.image} title={item.title}/>)}
+                    {this.state.firstData.map(item => <Category size={"270px"} id={item.id} key={item.id} image={item.image} title={item.title}/>)}
                 </div>
                 <FreeCategory />
+                <NewestCategory />
                 
             </div>
         );

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import './Slider.css';
 import BtnSlider from './BtnSlider';
-import Item from '../Item';
+import dataSlider from './dataSlider'
 
 
-export default function Slider({dataSlider}) {
+export default function Slider() {
 
     const [slideIndex, setSlideIndex] = useState(1)
 
@@ -32,7 +32,7 @@ export default function Slider({dataSlider}) {
 
     return (
         <div className="container-slider">
-            {/* {dataSlider.map((obj, index) => {
+            {dataSlider.map((obj, index) => {
                 return (
                     <div
                     key={obj.id}
@@ -43,16 +43,8 @@ export default function Slider({dataSlider}) {
                         />
                     </div>
                 )
-            })} */}
-            <div>
-            {dataSlider.map(obj => { 
-                <Item 
-                    className={slideIndex === obj.id + 1 ? "slide active-anim" : "slide"}
-                    size={"100vW"}
-                    id={obj.id}
-                    key={obj.id}
-                    image={obj.image}
-                    title={obj.title}/> })}</div>
+            })}
+    
             <BtnSlider moveSlide={nextSlide} direction={"next"} />
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>
 
