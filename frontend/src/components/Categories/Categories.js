@@ -10,6 +10,8 @@ import Psychologists from "../../images/Psychologists.png";
 import Meditation from "../../images/Meditation.png";
 import FreeCategory from './FreeCategory';
 import NewestCategory from './NewestCategory';
+import MostlikedCategory from './MostlikedCategory';
+import PsychologistCategory from './PsychologistCategory';
 
 
 class Categories extends Component {
@@ -34,6 +36,8 @@ class Categories extends Component {
                 </div>
                 <FreeCategory />
                 <NewestCategory />
+                <MostlikedCategory />
+                <PsychologistCategory />
                 
             </div>
         );
