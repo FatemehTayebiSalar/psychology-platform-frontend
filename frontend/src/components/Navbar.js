@@ -26,7 +26,7 @@ const Navbar = () => {
                 <Bars />
                 <NavMenu>
                     <NavLink to="/" activeStyle ={{ color:'black' }}>خانه</NavLink>
-                    <NavLink to="/" activeStyle ={{ color:'black' }}>متخصصان</NavLink>
+                    <NavLink to="/psych" activeStyle ={{ color:'black' }}>درمانگران</NavLink>
                     <NavLink to="/" activeStyle ={{ color:'black' }}>رویداد ها</NavLink>
                     <NavLink to="/" activeStyle ={{ color:'black' }}>پادکست ها</NavLink>
                     <NavLink to="/" activeStyle ={{ color:'black' }}>ویدیو ها</NavLink>

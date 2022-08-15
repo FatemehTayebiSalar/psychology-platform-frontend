@@ -9,7 +9,6 @@ const Landing = () => {
         <div>
             <Slider />
             <Categories />
-            <Footer />
         </div>
     );
 };
