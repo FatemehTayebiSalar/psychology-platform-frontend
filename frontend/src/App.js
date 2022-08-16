@@ -19,7 +19,7 @@ function App() {
        <Navbar />
        <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/psych/:id' element={<PsychDetail/>} />
+        <Route path='/psych/detail' element={<PsychDetail/>} />
         <Route path='/psychs' element={<Psychologits/>} />
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/login' element={<Login/>}/>
