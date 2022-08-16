@@ -15,11 +15,26 @@
 }
 
 .itemContainer{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px; */
+    /* justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: auto;
+    height: auto; */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+}
 
+@media (min-width: 600px) {
+    .itemContainer { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+@media (min-width: 900px) {
+    .itemContainer { grid-template-columns: repeat(4, 1fr); }
 }

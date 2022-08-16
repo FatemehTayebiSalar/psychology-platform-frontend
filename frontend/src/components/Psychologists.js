@@ -9,7 +9,7 @@ const Psychologits = () => {
         <div className={styles.container}>
             <h1>درمانگران</h1>
             <div className={styles.itemContainer}>
-                {PsychData.map(item => <Item size={"270px"} id={item.id} key={item.id} image={item.image} title={item.name}/>)}
+                {PsychData.map(item => <Item size={"250px"} id={item.id} key={item.id} image={item.image} title={item.name}/>)}
             </div>
         </div>
     );
