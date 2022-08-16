@@ -8,6 +8,7 @@ import StartPage from './components/StartPage.js';
 import './fonts/IRANSansWeb.ttf'
 import Psychologits from './components/Psychologists.js';
 import Footer from './components/Footer.js';
+import PsychDetail from './components/PsychDetail.js';
 
 
 
@@ -18,7 +19,8 @@ function App() {
        <Navbar />
        <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/psych' element={<Psychologits/>} />
+        <Route path='/psych/:id' element={<PsychDetail/>} />
+        <Route path='/psychs' element={<Psychologits/>} />
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/login' element={<Login/>}/>
       </Routes>

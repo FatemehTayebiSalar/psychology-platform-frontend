@@ -23,7 +23,7 @@ class Item extends Component {
         return (
             <div style={containerStyle}>
                 <img className={styles.imageStyle} src={image} alt="Items" />
-                <h3 className={styles.titleStyle}><Link to={`/products/${id}`}>{title}</Link></h3>
+                <h3 className={styles.titleStyle}><Link to={`/psychs/${id}`}>{title}</Link></h3>
             </div>
         );
     }
