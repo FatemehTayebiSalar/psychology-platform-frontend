@@ -9,18 +9,21 @@ import './fonts/IRANSansWeb.ttf'
 import Psychologits from './components/Psychologists.js';
 import Footer from './components/Footer.js';
 import PsychDetail from './components/PsychDetail.js';
+// import Appointment from './components/Appointment.js';
+
 
 
 
 function App() {
   return (
     <div >
-     
+      
        <Navbar />
        <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/psych/detail' element={<PsychDetail/>} />
         <Route path='/psychs' element={<Psychologits/>} />
+        {/* <Route path='/appointment' element={<Appointment/>} /> */}
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/login' element={<Login/>}/>
       </Routes>
