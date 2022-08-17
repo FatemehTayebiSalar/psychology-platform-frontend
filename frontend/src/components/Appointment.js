@@ -430,7 +430,7 @@ class Appointment extends Component {
                           })
                         }
                         disabled={!contactFormFilled || data.processed}
-                        style={{ marginTop: 20, maxWidth: 100 }}
+                        // style={{ marginTop: 20, maxWidth: 100 }}
                       />
                     </section>
                   </p>
