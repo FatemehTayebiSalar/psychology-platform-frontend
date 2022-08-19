@@ -1,0 +1,87 @@
+.container {
+  
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vW - 1100px) / 2);
+}
+
+.textContainer{
+  width: 60%;
+
+}
+
+
+.psychImg{
+  width: 30%;
+  border-top-left-radius: 10em;
+  border-top-right-radius: 10em;
+  box-shadow: -10px 10px 8px -10px #333333, 10px 10px 8px -10px #333333; 
+  border: 1px solid #222222;
+  border-top: none;
+}
+
+
+
+
+
+
+.textContainer img{
+  width: 30%;
+  border-radius: 1%;
+ 
+}
+
+h2{
+  font-size: 50px;
+  line-height: 80%
+}
+
+
+.hL1 {
+  overflow: hidden;
+  text-align: start;
+}
+
+.hL1:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.hL3 {
+  overflow: hidden;
+  text-align: end;
+  
+}
+
+.hL3:before {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  left: 0.5em;
+  margin-right: -35%;
+  
+ 
+}
+
+
+.detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:100%;
+}
+
+

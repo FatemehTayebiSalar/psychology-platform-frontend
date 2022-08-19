@@ -8,6 +8,8 @@ import {Link} from "react-router-dom";
 
 const SignUp = () => {
 
+
+
     const [data , setData] = useState({
         name:"",
         email:"",
@@ -120,7 +122,7 @@ const SignUp = () => {
                 </div>
                 <div className={styles.formButtons}>
                     <Link to="/login">ورود</Link>
-                    <button type="submit">ثبت نام</button>
+                    <button type="submit" >ثبت نام</button>
                 </div>
             </form>
             <ToastContainer />

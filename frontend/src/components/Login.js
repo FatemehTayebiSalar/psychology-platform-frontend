@@ -39,9 +39,9 @@ const Login= () => {
     const submitHandler = event =>{
         event.preventDefault();
         notify()
-        if(!Object.keys(errors).length){
-            notify("ورود با موفقیت انجام شد.","success")
-        }else{
+        if(Object.keys(errors).length){
+           
+            // notify("ورود با موفقیت انجام شد.","success")
             notify("اطلاعات وارد شده صحیح نمی باشند","error")
             setTouched({
                     name:true,
@@ -51,6 +51,27 @@ const Login= () => {
                     isAccepted:true
                 })
         }
+        
+        const requestBody = {
+            query:`
+                mutation{
+                   createUser(userInput : {email:"${data.email}",password:"${data.password}"}) {
+                       _id
+                       email
+                   } 
+                }
+            
+            
+            `
+        };
+
+        fetch('http://localhost:8000/graphql', {
+            method: 'Post',
+            body:JSON.stringify(requestBody),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
     }
 
    
