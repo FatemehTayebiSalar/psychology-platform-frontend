@@ -16,7 +16,7 @@ import PsychDetail from './components/PsychDetail.js';
 
 function App() {
   return (
-    <div style={{backgroundColor: "#F6F6F6"}} >
+    <div style={{backgroundColor: "#dedcdc"}} >
       
        <Navbar />
        <Routes>
