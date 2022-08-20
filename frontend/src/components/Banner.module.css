@@ -1,5 +1,4 @@
 .container {
-  
   display: flex;
   flex-direction: row;
   margin-top: 10px;
@@ -89,17 +88,25 @@ h2{
 .podImgContainer{
   width: 50%;
   height: auto;
-  display: inline-block;
-  margin-left: -25%;
-  z-index: 10;
+ position: relative;
+ margin-left: -25%;
 }
 .podcastImg {
   width:100%;
   border-radius: 1%;
-  border: 0.5px solid #222222;;
-  /* filter: grayscale(20%); */
-  /* filter: blur(0.8px); */
-  
+  border: 1px solid black;
+  transform: scaleX(-1);
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  box-shadow: -10px 10px 8px -10px #333333; 
 }
 
+.playImg{
+  position: absolute;
+  top: 75px;
+  right: -30px;
+  z-index: 2;
+}
 

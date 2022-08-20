@@ -14,8 +14,8 @@ const Banner = () => {
                 <div className={styles.detail}>
                     <span>We live in a world of knitting hhvgkhkjhgkhjgkjhgkhgkjhgjkhg</span>
                     <div className={styles.podImgContainer}>
-                        <img src={bannerPod} className={styles.podcastImg} alt="Banner" />
-                        
+                        <img src={playIcon} className={styles.playImg} alt="Banner" />
+                        <img src={bannerPod} className={styles.podcastImg} alt="Banner" />       
                     </div>
                 </div>
             </div>
