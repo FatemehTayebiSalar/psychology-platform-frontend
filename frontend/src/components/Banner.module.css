@@ -1,19 +1,20 @@
 .container {
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 8px;
   justify-content: space-between;
   padding: 0.5rem calc((100vW - 1100px) / 2);
 }
 
 .textContainer{
   width: 60%;
-
+  
 }
 
 
 .psychImg{
-  width: 30%;
+  width: 33%;
+  height: auto;
   border-top-left-radius: 10em;
   border-top-right-radius: 10em;
   box-shadow: -10px 10px 8px -10px #333333, 10px 10px 8px -10px #333333; 
@@ -22,21 +23,16 @@
 }
 
 
-
-
-
-
-
-
-h2{
-  font-size: 50px;
-  line-height: 80%
+h1{
+  
+  font-family: "Black";
+  line-height:50px;
+  /* word-spacing: 2px; */
 }
-
-
 .hL1 {
   overflow: hidden;
   text-align: start;
+  width: 80%;
 }
 
 .hL1:after {
@@ -51,10 +47,14 @@ h2{
   margin-left: -50%;
 }
 
+.hL2{
+  width: 80%;
+}
+
 .hL3 {
   overflow: hidden;
   text-align: end;
-  
+  width: 80%;
 }
 
 .hL3:before {
@@ -66,7 +66,7 @@ h2{
   vertical-align: middle;
   width: 100%;
   left: 0.5em;
-  margin-right: -35%;
+  margin-right: -28%;
   
  
 }
@@ -77,19 +77,48 @@ h2{
   flex-direction:row ;
   justify-content: space-between;
   width:100%;
-  
+  margin-top: 50px;
 }
 
-.detail span{
-  width: 100%;
+.textDetail{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.textDetail span{
+  font-family: "Light";
+  color: #464545;
+}
+
+.textDetail button{
+  font-family: "Light";
+  border-radius: 4px;
+  background: black;
+  padding: 5px 15px;
+  margin-top: 5px;
+  color:#fff;
+  border:none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  height: 40px;
+  width:fit-content;
   display: inline-block;
+
+  margin-inline-start:65%;
+}
+
+
+.topics{
+  font-family: "Medium";
 }
 
 .podImgContainer{
   width: 50%;
-  height: auto;
- position: relative;
- margin-left: -25%;
+  position: relative;
+  margin-left: -25%;
 }
 .podcastImg {
   width:100%;
@@ -97,16 +126,19 @@ h2{
   border: 1px solid black;
   transform: scaleX(-1);
   top: 0;
-  left: 0;
+  left: 10%;
   position: absolute;
   z-index: 1;
   box-shadow: -10px 10px 8px -10px #333333; 
+  max-height: 220px;
 }
 
 .playImg{
   position: absolute;
   top: 75px;
-  right: -30px;
+  right: -62px;
   z-index: 2;
 }
+
+
 

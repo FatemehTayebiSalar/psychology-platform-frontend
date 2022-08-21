@@ -1,11 +1,22 @@
 import React from 'react'
 import Landing from './components/Landing.js';
 import {Route ,Routes} from "react-router-dom";
+import "./App.css";
+
+//import fonts
+import "./fonts/IRANSansWeb.ttf";
+import "./fonts/IRANSansWeb_Bold.ttf";
+import "./fonts/IRANSansWeb_Light.ttf";
+import "./fonts/IRANSansWeb_UltraLight.ttf";
+import "./fonts/IRANSansWeb_Medium.ttf";
+import "./fonts/IRANSansWeb_Black.ttf"
+
+
+
 import Navbar from './components/Navbar.js'
 import SignUp from './components/SignUp.js';
 import Login from './components/Login.js';
 import StartPage from './components/StartPage.js';
-import './fonts/IRANSansWeb.ttf'
 import Psychologits from './components/Psychologists.js';
 import Footer from './components/Footer.js';
 import PsychDetail from './components/PsychDetail.js';

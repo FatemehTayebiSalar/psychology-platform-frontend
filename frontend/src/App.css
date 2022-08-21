@@ -1,10 +1,37 @@
-*{
+/* *{
     box-sizing:border-box;
     margin: 0;
     padding: 0;
     font-family: 'IRANSansWeb';
+} */
+@font-face {
+    font-family: "Normal";   
+    src: local("IRANSansWeb"),
+      url("./fonts/IRANSansWeb.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'IRANSansWeb';
-    src: local('IRANSansWeb'),url('./fonts/IRANSansWeb.ttf')format('truetype');
+    font-family: "Bold";   
+    src: local("IRANSansWeb_Bold"),
+      url("./fonts/IRANSansWeb_Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Light";   
+    src: local("IRANSansWeb_Light"),
+      url("./fonts/IRANSansWeb_Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "UltraLight";   
+    src: local("IRANSansWeb_UltraLight"),
+      url("./fonts/IRANSansWeb_UltraLight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Medium";   
+    src: local("IRANSansWeb_Medium"),
+      url("./fonts/IRANSansWeb_Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Black";   
+    src: local("IRANSansWeb_Black"),
+      url("./fonts/IRANSansWeb_Black.ttf") format("truetype");
 }
