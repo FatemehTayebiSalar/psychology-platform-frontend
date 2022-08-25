@@ -1,9 +1,10 @@
 .container {
   display: flex;
   flex-direction: row;
-  margin-top: 8px;
   justify-content: space-between;
   padding: 0.5rem calc((100vW - 1100px) / 2);
+  padding-top: 4%;
+  background-color: #f6f6f6;
 }
 
 .textContainer{
@@ -14,7 +15,7 @@
 
 .psychImg{
   width: 33%;
-  height: auto;
+  height: fit-content;
   border-top-left-radius: 10em;
   border-top-right-radius: 10em;
   box-shadow: -10px 10px 8px -10px #333333, 10px 10px 8px -10px #333333; 
