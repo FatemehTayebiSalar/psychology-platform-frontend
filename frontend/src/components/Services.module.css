@@ -40,6 +40,10 @@
     width: 25%;
     height: auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .item img{
@@ -47,7 +51,7 @@
     height: auto;
     border-top-left-radius: 10em;
     border-top-right-radius: 10em;
-    box-shadow: -10px 10px 8px -10px #333333, 10px 10px 8px -10px #333333; 
+    box-shadow: -10px 10px 8px -13px #333333, 10px 10px 8px -13px #333333; 
     border: 1px solid #222222;
     border-top: none;
     display: flex;
@@ -60,33 +64,21 @@
 
 .info{
     font-family: 'Light';
-    background-color: rgba(251, 248, 248, 0.8);
+    background-color: rgba(251, 248, 248, 0.5);
     width: 90%;
-    margin-top: -20%;
+    margin-top: 140%;
     position: absolute;
-    box-shadow: -10px 10px 8px -10px #333333, 10px 10px 8px -10px #333333; 
+    box-shadow: -10px 10px 8px -12px #606060, 10px 10px 8px -12px #606060; 
     padding: 10px;
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    color: #000;
 }
 
 .info h3{
     line-height: 5px;
 }
 
-/* .container h1{
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
-    margin-right: 170px ;
+.info span{
+    color: #000;
 }
-.itemContainer{
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    
-}
-
-.itemContainer Item{
-    margin: 10px auto;
-} */

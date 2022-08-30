@@ -16,41 +16,38 @@ const Services = () => {
             <div className={styles.itemContainer}>
                 <div className={styles.item}>
                     <img src={podcast} alt="Items" />
-                    <div className={styles.info}>
-                        <h3 className={styles.titleStyle}>
+                    <Link to={`/psychs`} className={styles.info}>
+                        <h3>
                             پادکست
                         </h3>
-                        <span className={styles.titleStyle}>
+                        <span>
                          جدیدترین پادکست ها را از زبان متخصصین ماهر بشنوید. 
                         </span>
-                        <Link to={`/`}></Link>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className={styles.item}>
                     <img src={event} alt="Items" />
-                    <div className={styles.info}>
-                        <h3 className={styles.titleStyle}>
+                    <Link to={`/psychs`} className={styles.info}>
+                        <h3>
                             رویداد ها
                         </h3>
-                        <span className={styles.titleStyle}>
+                        <span>
                           رویداد هایی تدارک دیده شده که می‌توانید به آن ها بپیوندید.
                         </span>
-                        <Link to={`/`}></Link>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className={styles.item}>
                     <img src={meditation} alt="Items" />
-                    <div className={styles.info}>
-                        <h3 className={styles.titleStyle}>
+                    <Link to={`/psychs`} className={styles.info}>
+                        <h3>
                             مدیتیشن
                         </h3>
-                        <span className={styles.titleStyle}>
+                        <span>
                             با مدیتیشن آرامش را به روح و جسم خود هدایت کنید.
                         </span>
-                        <Link to={`/`}></Link>
-                    </div>
+                    </Link>
                 </div>
                 
                 
