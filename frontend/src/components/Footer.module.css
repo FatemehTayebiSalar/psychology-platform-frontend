@@ -39,6 +39,8 @@
     text-decoration: none;
     height: 40px;
     width: 100px;
+    font-family: "Light";
+    font-size: 12px;
 }
 
 .details{
