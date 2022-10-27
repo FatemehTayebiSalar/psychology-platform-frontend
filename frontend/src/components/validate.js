@@ -22,10 +22,20 @@ export const validate = (data,type) =>{
 
     if(type === "signup"){
 
-        if(!data.name.trim()){
-            errors.name = "وارد کردن نام کاربری الزامی می باشد"
+        if(!data.fName.trim()){
+            errors.fName = "وارد کردن نام الزامی می باشد"
         }else{
-            delete errors.name
+            delete errors.fName
+        }
+        if(!data.lName.trim()){
+            errors.lName = "وارد کردن نام خانوادگی الزامی می باشد"
+        }else{
+            delete errors.lName
+        }
+        if(!data.phoneNumber.trim()){
+            errors.phoneNumber = "وارد کردن شماره تلفن الزامی می باشد"
+        }else{
+            delete errors.phoneNumber
         }
 
         if (!data.confirmPassword){

@@ -11,7 +11,9 @@ const SignUp = () => {
 
 
     const [data , setData] = useState({
-        name:"",
+        fName:"",
+        lName:"",
+        phoneNumber:"",
         email:"",
         password:"",
         confirmPassword:"",
@@ -44,11 +46,35 @@ const SignUp = () => {
         event.preventDefault();
         notify()
         if(!Object.keys(errors).length){
+            const requestBody = {
+                query:`
+                    mutation{
+                       createUser(userInput : {email:"${data.email}",password:"${data.password}",fName:"${data.fName}",lName:"${data.lName}",phoneNumber:"${data.phoneNumber}"}) {
+                           _id
+                           email
+                       } 
+                    }
+                
+                
+                `
+            };
+    
+            fetch('http://localhost:8000/graphql', {
+                method: 'Post',
+                body:JSON.stringify(requestBody),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
             notify("ثبت نام شما با موفقیت انجام شد","success")
+
+
         }else{
             notify("اطلاعات وارد شده صحیح نمی باشند","error")
             setTouched({
-                    name:true,
+                    fName:true,
+                    lName:true,
+                    phoneNumber:true,
                     email:true,
                     password:true,
                     confirmPassword:true,
@@ -66,13 +92,35 @@ const SignUp = () => {
                 <div className={styles.formField}>
                     <label>نام </label>
                     <input
-                        className={(errors.name && touched.name) ? styles.uncompleted : styles.formInput} 
+                        className={(errors.fName && touched.fName) ? styles.uncompleted : styles.formInput} 
                         type="text" 
-                        name="name" 
-                        value={data.name} 
+                        name="fName" 
+                        value={data.fName} 
                         onChange={changeHandler} 
                         onFocus={focusHandler}/>
-                    {errors.name && touched.name && <span>{errors.name}</span>}
+                    {errors.fName && touched.fName && <span>{errors.fName}</span>}
+                </div>
+                <div className={styles.formField}>
+                    <label>نام خانوادگی </label>
+                    <input
+                        className={(errors.lName && touched.lName) ? styles.uncompleted : styles.formInput} 
+                        type="text" 
+                        name="lName" 
+                        value={data.lName} 
+                        onChange={changeHandler} 
+                        onFocus={focusHandler}/>
+                    {errors.lName && touched.lName && <span>{errors.lName}</span>}
+                </div>
+                <div className={styles.formField}>
+                    <label>شماره تلفن </label>
+                    <input
+                        className={(errors.phoneNumber && touched.phoneNumber) ? styles.uncompleted : styles.formInput} 
+                        type="text" 
+                        name="phoneNumber" 
+                        value={data.phoneNumber} 
+                        onChange={changeHandler} 
+                        onFocus={focusHandler}/>
+                    {errors.phoneNumber && touched.phoneNumber && <span>{errors.phoneNumber}</span>}
                 </div>
                 <div className={styles.formField}>
                     <label>ایمیل</label>
