@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from "./Banner.module.css";
-import bannerPsych from "../images/bannerPsych.jpg";
-import bannerPod from "../images/bannerPod.jpg";
-import playIcon from "../images/Icons/play.png";
+import styles from "./Styles/Banner.module.css";
+import bannerPsych from "../../images/bannerPsych.jpg";
+import bannerPod from "../../images/bannerPod.jpg";
+import playIcon from "../../images/Icons/play.png";
 
 const Banner = () => {
     return (

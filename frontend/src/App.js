@@ -1,5 +1,5 @@
 import React from 'react'
-import Landing from './components/Landing.js';
+import Landing from './components/Home/Landing';
 import {Route ,Routes} from "react-router-dom";
 import "./App.css";
 
@@ -16,7 +16,7 @@ import "./fonts/IRANSansWeb_Black.ttf"
 import Navbar from './components/Navbar.js'
 import SignUp from './components/SignUp.js';
 import Login from './components/Login.js';
-import StartPage from './components/StartPage.js';
+// import StartPage from './components/StartPage.js';
 import Psychologits from './components/Psychologists.js';
 import Footer from './components/Footer.js';
 import PsychDetail from './components/PsychDetail.js';

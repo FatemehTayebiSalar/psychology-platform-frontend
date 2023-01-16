@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Services.module.css';
-import podcast from '../images/servicesImg/podcast.jpg';
-import meditation from '../images/servicesImg/meditation.jpg';
-import event from '../images/servicesImg/events.jpg';
+import styles from './Styles/Services.module.css';
+import podcast from '../../images/servicesImg/podcast.jpg';
+import meditation from '../../images/servicesImg/meditation.jpg';
+import event from '../../images/servicesImg/events.jpg';
 import {Link} from 'react-router-dom';
 
 
