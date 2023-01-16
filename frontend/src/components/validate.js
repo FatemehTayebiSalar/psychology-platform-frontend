@@ -3,20 +3,16 @@ export const validate = (data,type) =>{
     const errors = {};
 
     
-    if(!data.email){
-        errors.email = "وارد کردن ایمیل الزامی می باشد"
-    }else if (!/\S+@\S+\.\S+/.test(data.email)){
-        errors.email = "آدرس ایمیل اشتباه وارد شده است"
+    if(!data.mobile){
+        errors.mobile = "وارد کردن شماره موبایل الزامی می باشد"
     }else{
-        delete errors.email
+        delete errors.mobile
     }
 
-    if(!data.password){
-        errors.password = "وارد کردن رمز عبور الزامی می باشد"
-    }else if(data.password.length < 6){
-        errors.password = "رمز عبور باید 6 کاراکتر یا بیش از آن باشد"
+    if(!data.code){
+        errors.code = "وارد کردن رمز یکبار مصرف الزامی می باشد"
     }else{
-        delete errors.password
+        delete errors.code
     }
 
 
@@ -32,10 +28,10 @@ export const validate = (data,type) =>{
         }else{
             delete errors.lName
         }
-        if(!data.phoneNumber.trim()){
-            errors.phoneNumber = "وارد کردن شماره تلفن الزامی می باشد"
+        if(!data.email.trim()){
+            errors.email = "وارد کردن شماره تلفن الزامی می باشد"
         }else{
-            delete errors.phoneNumber
+            delete errors.email
         }
 
         if (!data.confirmPassword){
