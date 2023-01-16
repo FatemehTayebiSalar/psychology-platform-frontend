@@ -16,7 +16,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.0.1",
     "styled-component": "^2.8.0",
@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy" : "http://localhost:5000",
+  "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": [
       "react-app",
