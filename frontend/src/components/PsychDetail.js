@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import PsychData from './PsychData.js';
 import styles from './PsychDetail.module.css';
 import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 
-const PsychDetail = () => {
+
+const PsychDetail = (props) => {
+    const params = useParams();
+    const id = params.id
+
+    const [detailData , setDetailData] = useState({})
+
+    useEffect(()=>{
+        axios.get(`http://localhost:5000/psychologists/${id}`)
+        .then(response => {
+            const data = response.data.data.psychologist
+            setDetailData(data)
+        }
+        ).catch(errors => console.log(errors))
+        
+    },[])
+
+
     return (
         <div className={styles.container}>
             <p>پروفایل درمانگر</p>
@@ -14,25 +33,25 @@ const PsychDetail = () => {
                     <table className={styles.infoTable}  >
                             <thead>
                                 <tr>
-                                    <th><h2>{PsychData[2].name}</h2></th>
+                                    <th><h2>{detailData.name}</h2></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th >تحصیلات</th>
-                                    <td>{PsychData[2].degree}</td>
+                                    <td>{detailData.degree}</td>
                                 </tr>
                                 <tr>
                                     <th > تخصص</th>
-                                    <td>{PsychData[2].degree}</td>
+                                    <td>{detailData.degree}</td>
                                 </tr>
                                 <tr>
                                     <th>آدرس</th>
-                                    <td>{PsychData[2].address}</td>
+                                    <td>{detailData.address}</td>
                                 </tr>
                                 <tr>
                                     <th>شماره تلفن</th>
-                                    <td>{PsychData[2].phoneNumber}</td>
+                                    <td>{detailData.phoneNumber}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -40,7 +59,7 @@ const PsychDetail = () => {
                             <tbody>
                                 <tr>
                                     <th >هزینه ی هر جلسه</th>
-                                    <td className={styles.cost}> {PsychData[2].visitAmount}تومان</td>
+                                    <td className={styles.cost}> {detailData.visitAmount}تومان</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -48,8 +67,8 @@ const PsychDetail = () => {
                 </div>
                 <div className={styles.imgContainer}>
                     <div className={styles.mainImg}>
-                        <span>{PsychData[2].name}</span>
-                        <img src={PsychData[2].image}  />
+                        <span>{detailData.name}</span>
+                        <img src={detailData.imageURL}  />
                     </div>
                     <div className={styles.arrows}>
 

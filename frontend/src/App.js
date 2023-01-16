@@ -32,7 +32,7 @@ function App() {
        <Navbar />
        <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/psych/detail' element={<PsychDetail/>} />
+        <Route path='/psychs/:id' element={<PsychDetail/>} />
         <Route path='/psychs' element={<Psychologits/>} />
         {/* <Route path='/appointment' element={<Appointment/>} /> */}
         <Route path='/signup' element={<SignUp/>}/>
