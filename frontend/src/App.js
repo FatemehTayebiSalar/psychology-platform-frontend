@@ -20,6 +20,8 @@ import Login from './components/Login.js';
 import Psychologits from './components/Psychologists.js';
 import Footer from './components/Footer.js';
 import PsychDetail from './components/PsychDetail.js';
+import Events from './components/Events/Events.js';
+import EventDetail from './components/Events/EventDetail';
 // import Appointment from './components/Appointment.js';
 
 
@@ -35,6 +37,8 @@ function App() {
         <Route path='/psychs/:id' element={<PsychDetail/>} />
         <Route path='/psychs' element={<Psychologits/>} />
         {/* <Route path='/appointment' element={<Appointment/>} /> */}
+        <Route path='/events/:id' element={<EventDetail/>} />
+        <Route path='/events' element={<Events />} />
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/login' element={<Login/>}/>
       </Routes>
