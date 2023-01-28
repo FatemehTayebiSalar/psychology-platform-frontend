@@ -13,13 +13,12 @@ import "./fonts/IRANSansWeb_Black.ttf"
 
 
 
-import Navbar from './components/Navbar.js'
+import Navbar from './components/Navbar/Navbar.js'
 import SignUp from './components/SignUp.js';
 import Login from './components/Login.js';
-// import StartPage from './components/StartPage.js';
-import Psychologits from './components/Psychologists.js';
-import Footer from './components/Footer.js';
-import PsychDetail from './components/PsychDetail.js';
+import Psychologits from './components/Psychologists/Psychologists.js';
+import Footer from './components/Footer/Footer.js';
+import PsychDetail from './components/Psychologists/PsychDetail.js';
 import Events from './components/Events/Events.js';
 import EventDetail from './components/Events/EventDetail';
 import Podcasts from './components/Podcasts/Podcasts';

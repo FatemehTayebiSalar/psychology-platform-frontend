@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
 
-import logo from "../images/logo.png"
+import logo from "../../images/logo.png"
 
 import {
     Nav,
@@ -24,7 +24,7 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLogo to="/">
-                    <img src={logo} style={logoStyle}/>
+                    <img src={logo} style={logoStyle} alt="logoImg" />
                 </NavLogo>
                 <Bars />
                 <NavMenu>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import PsychData from './PsychData.js';
-import styles from './PsychDetail.module.css';
+import styles from './Styles/PsychDetail.module.css';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -68,7 +67,7 @@ const PsychDetail = (props) => {
                 <div className={styles.imgContainer}>
                     <div className={styles.mainImg}>
                         <span>{detailData.name}</span>
-                        <img src={detailData.imageURL}  />
+                        <img src={detailData.imageURL}  alt="currentImg"/>
                     </div>
                     <div className={styles.arrows}>
 
@@ -82,7 +81,7 @@ const PsychDetail = (props) => {
                                 <i><Link to={`/psychs`} className={styles.leftArrow} /></i>
                             </span>
                     </div>
-                    <img src={PsychData[3].image} className={styles.nextImg} />
+                    <img src={detailData.imageURL} className={styles.nextImg} alt="nextImg"/>
                 </div>  
             </div>
             <hr/>

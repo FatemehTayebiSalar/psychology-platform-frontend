@@ -1,5 +1,3 @@
-import bannerPod from "../../images/bannerPod.jpg";
-import playIcon from '../../images/podcastPage/icons/playEpisodeIcon.png';
 import styles from './Styles/VideoEpisode.module.css';
 import ReactVideoPlayer from 'react-player';
 

@@ -8,7 +8,7 @@ class EpisodeModal extends Component {
         const {data ,modelName} = this.props
         return(
             <div>
-                {modelName == "podcast" ? (
+                {modelName === "podcast" ? (
                     <PodEpisodes title={data.title} text={data.text} fileURL={data.fileURL}/>
                 ) : (
                     <VideoEpisodes title={data.title} text={data.text} fileURL={data.fileURL}/>

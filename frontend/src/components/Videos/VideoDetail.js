@@ -33,15 +33,15 @@ const VideoDetail = () => {
     return (
         <div className={styles.container}>
             <div className={styles.banner}>
-                <img src={detailData.imageURL} className={styles.mainImg}/>
+                <img src={detailData.imageURL} className={styles.mainImg} alt="videoImage"/>
                 <div className={styles.info}>
                     <p className={styles.title}>ویدیو {detailData.title}</p>
                     <span className={styles.coach}>
-                        <img src={microIcon} />
+                        <img src={microIcon} alt="microIcon"/>
                         <p>سرپرست ویدیو : {detailData.coach}</p>
                     </span>
                     <span className={styles.text}>
-                        <img src={infoIcon} />
+                        <img src={infoIcon} alt="infoIcon"/>
                         <p>معرفی : {detailData.information}</p>
                     </span>
                     
@@ -50,7 +50,7 @@ const VideoDetail = () => {
             <div className={styles.body}>
                 <div className={styles.chapterContainer}>
                     <span className={styles.chapterTitle}>
-                        <img src={podChapterIcon}/>
+                        <img src={podChapterIcon} alt="chapterIcon"/>
                         <p>فصل ها</p>
                     </span>
                     <span className={styles.chapterList}>

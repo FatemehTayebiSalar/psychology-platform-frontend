@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import styles from './EventDetail.module.css';
-import { Link } from 'react-router-dom';
+import styles from './Styles/EventDetail.module.css';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
@@ -65,7 +64,7 @@ const EventDetail = (props) => {
                 </div>
                 <div className={styles.imgContainer}>
                     
-                    <img src={detailData.imageURL}  />
+                    <img src={detailData.imageURL} alt="episodeImg" />
                     
                 </div>  
             </div>

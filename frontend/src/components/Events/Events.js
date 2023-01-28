@@ -1,6 +1,6 @@
 import React, {useState , useEffect} from 'react';
 
-import styles from './Events.module.css';
+import styles from './Styles/Events.module.css';
 import axios from 'axios';
 import EventsItem from './EventsItem';
 

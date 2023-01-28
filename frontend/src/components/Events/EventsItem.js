@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import capacityIcon from '../../images/Icons/capacity.png';
 import registeredIcon from '../../images/Icons/registered.png';
 import PersianNumber from '../shared/PersianNumber';
-import styles from './EventsItem.module.css';
+import styles from './Styles/EventsItem.module.css';
 
 
 

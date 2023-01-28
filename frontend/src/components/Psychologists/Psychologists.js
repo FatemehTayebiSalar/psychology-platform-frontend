@@ -1,6 +1,6 @@
 import React, {useState , useEffect} from 'react';
-import Item from './Item';
-import styles from './Psychologists.module.css';
+import Item from '../Item.js';
+import styles from './Styles/Psychologists.module.css';
 import axios from 'axios';
 
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from "./Footer.module.css"
-import img1 from '../images/licenses/creative-startup.png';
-import img2 from '../images/licenses/logo-computer.png';
-import img3 from '../images/licenses/logo-electronic.png';
-import img4 from '../images/licenses/logo-validation.png';
-import icon1 from '../images/Icons/instagram.png';
-import icon2 from '../images/Icons/linkedin.png';
-import icon3 from '../images/Icons/facebook.png';
+import img1 from '../../images/licenses/creative-startup.png';
+import img2 from '../../images/licenses/logo-computer.png';
+import img3 from '../../images/licenses/logo-electronic.png';
+import img4 from '../../images/licenses/logo-validation.png';
+import icon1 from '../../images/Icons/instagram.png';
+import icon2 from '../../images/Icons/linkedin.png';
+import icon3 from '../../images/Icons/facebook.png';
 
 const Footer = () => {
     return (
