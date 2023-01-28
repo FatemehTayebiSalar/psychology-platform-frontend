@@ -16,8 +16,8 @@ class PodcastItem extends Component {
         return (
             <div className={styles.container}>
                 <img src={coverImage} alt="PodcastImage" className={styles.podImg} />
-                <h3 className={styles.podTitle}><Link to={`/podcasts/${id}`}>{title}</Link></h3>
-                <h5 className={styles.podNarrator}>همراه با {narrator}</h5>
+                <span className={styles.podTitle}><Link to={`/podcasts/${id}`}>{title}</Link></span>
+                <span className={styles.podNarrator}>همراه با {narrator}</span>
             </div>
         );
     }
