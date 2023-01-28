@@ -1,8 +1,7 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-// import {Link, NavLink} from 'react-router-dom';
-// import styles from "./Navbar.module.css";
-// import logo from "../images/logo.png"
+
+import logo from "../images/logo.png"
 
 import {
     Nav,
@@ -17,18 +16,22 @@ import {
 
 
 const Navbar = () => {
+    const logoStyle = {
+        width : "50%",
+        marginTop : "10%"
+      };
     return (
         <>
             <Nav>
                 <NavLogo to="/">
-                    <h1>Logo</h1>
+                    <img src={logo} style={logoStyle}/>
                 </NavLogo>
                 <Bars />
                 <NavMenu>
                     <NavLink to="/" >خانه</NavLink>
                     <NavLink to="/psychs">درمانگران</NavLink>
-                    <NavLink to="/" >رویداد ها</NavLink>
-                    <NavLink to="/" >پادکست ها</NavLink>
+                    <NavLink to="/events" >رویداد ها</NavLink>
+                    <NavLink to="/podcasts" >پادکست ها</NavLink>
                     <NavLink to="/" >ویدیو ها</NavLink>
                     
                 </NavMenu>
