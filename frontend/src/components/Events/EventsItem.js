@@ -21,7 +21,7 @@ class EventItem extends Component {
                 <div className={styles.info}>
                     <img src={image} alt="EventImage" className={styles.eventImg} />
                     <span className={styles.text}>
-                        <h4><Link to={`/`}>{title}</Link></h4>
+                        <h4><Link to={`/events/${id}`}>{title}</Link></h4>
                         <p>{date}</p>
                     </span>
                 </div>
