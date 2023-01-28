@@ -3,6 +3,7 @@
     flex-direction: column;
     border-radius: 20px;
     width: 100%;
+    margin-bottom: 5% ;
 }
 
 
@@ -88,14 +89,14 @@
     width: 100%;
     height: 100%;
     padding-top: 100px;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.713);
+    background-color: rgba(0, 0, 0, 0.805);
     -webkit-transition: 0.5s;
     overflow: auto;
     transition: all 0.3s linear;
 }
 
 .closeIcon{
-    margin-right: 85%;
+    margin-bottom: 5%;
+    margin-right: 5%;
     cursor: pointer;
 }

@@ -1,6 +1,7 @@
 import PodEpisodes from "../Podcasts/PodEpisodes";
 
 import React, { Component } from 'react';
+import VideoEpisodes from "../Videos/VideoEpisdes";
 
 class EpisodeModal extends Component {
     render() {
@@ -10,7 +11,7 @@ class EpisodeModal extends Component {
                 {modelName == "podcast" ? (
                     <PodEpisodes title={data.title} text={data.text} fileURL={data.fileURL}/>
                 ) : (
-                    <div>Hello Modal</div>
+                    <VideoEpisodes title={data.title} text={data.text} fileURL={data.fileURL}/>
                 )}
             </div>
         )
