@@ -1,10 +1,17 @@
 import React, {useState} from 'react';
 import './Slider.css';
 import BtnSlider from './BtnSlider';
-import dataSlider from './dataSlider'
+import slideContent from './SlideContent';
+import PersianDate from '../../shared/persianDate';
 
 
 export default function Slider() {
+    
+    const currentWeek = new PersianDate()
+    const previousWeek = new PersianDate(currentWeek.getTime() - (7 * 24 * 60 * 60 * 1000))
+    const nextWeek = new PersianDate(currentWeek.getTime() + (7 * 24 * 60 * 60 * 1000))
+
+    const dataSlider = [previousWeek,currentWeek,nextWeek]
 
     const [slideIndex, setSlideIndex] = useState(1)
 
@@ -32,15 +39,12 @@ export default function Slider() {
 
     return (
         <div className="container-slider">
-            {dataSlider.map((obj, index) => {
+            {dataSlider.map((item,index) => {
                 return (
                     <div
-                    key={obj.id}
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
-                        <img 
-                        src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} 
-                        />
+                        <slideContent date={item}></slideContent>
                     </div>
                 )
             })}

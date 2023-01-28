@@ -22,6 +22,8 @@ import Footer from './components/Footer.js';
 import PsychDetail from './components/PsychDetail.js';
 import Events from './components/Events/Events.js';
 import EventDetail from './components/Events/EventDetail';
+import Podcasts from './components/Podcasts/Podcasts';
+import PodcastDetail from './components/Podcasts/PodcastDetail';
 // import Appointment from './components/Appointment.js';
 
 
@@ -39,6 +41,8 @@ function App() {
         {/* <Route path='/appointment' element={<Appointment/>} /> */}
         <Route path='/events/:id' element={<EventDetail/>} />
         <Route path='/events' element={<Events />} />
+        <Route path='/podcasts/:id' element={<PodcastDetail/>} />
+        <Route path='/podcasts' element={<Podcasts />} />
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/login' element={<Login/>}/>
       </Routes>
