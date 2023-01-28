@@ -1,0 +1,13 @@
+.container{
+    display: block;
+}
+
+.date{
+    font-family: "Black";
+    font-size: 32px;
+}
+
+.day{
+    font-family: "Black";
+    font-size: 14px;
+}
