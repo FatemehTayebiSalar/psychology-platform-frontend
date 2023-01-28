@@ -32,7 +32,7 @@ const Navbar = () => {
                     <NavLink to="/psychs">درمانگران</NavLink>
                     <NavLink to="/events" >رویداد ها</NavLink>
                     <NavLink to="/podcasts" >پادکست ها</NavLink>
-                    <NavLink to="/" >ویدیو ها</NavLink>
+                    <NavLink to="/videos" >ویدیو ها</NavLink>
                     
                 </NavMenu>
                 <NavBtn>
