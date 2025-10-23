@@ -42,5 +42,7 @@ npm start
 
 Open http://localhost:3000 in your browser.
 
+---
+
 🔗 Related Links
 Backend Repository: Psychology Platform Backend
