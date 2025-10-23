@@ -68,9 +68,6 @@ const Videos = () => {
                     </span>
                 </div>
                 <span className={styles.title}>جدید ترین و محبوب ترین ویدیو ها</span>
-                <div className={styles.newEpisodeDetail}>
-                    <VideoEpisodes className={styles.newEpisode} />
-                </div>
                 <div className={styles.itemContainer}>
                     {videosData.map(item => <VideoItem title={item.title} id={item.id} key={item.id} coverImage={item.imageURL} narrator={item.coach}/>)}
                 </div>

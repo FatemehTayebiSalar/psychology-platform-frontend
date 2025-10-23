@@ -21,7 +21,7 @@ export const NavLogo = styled(Link)`
     cursor: pointer;
 
     &:hover {
-        color: green;
+        color: rgb(34, 79, 48);
     }
 
     @media screen and (max-width: 768px){
@@ -40,7 +40,7 @@ export const NavLink = styled(Link)`
     cursor: pointer;
 
     &:hover {
-        color: green;
+        color: rgb(34, 79, 48);
     }
 `;
 
@@ -96,7 +96,7 @@ export const NavBtnLink = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: green;
+        background: rgb(34, 79, 48);
         color: #010606;
     }
 `;

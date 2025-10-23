@@ -1,7 +1,7 @@
 import React, {useState , useEffect} from 'react';
-import styles from './SignUp.module.css';
-import {validate} from './validate';
-import {notify} from './toast';
+import styles from './Login.module.css';
+import {validate} from '../validate';
+import {notify} from '../toast';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
@@ -90,7 +90,9 @@ const Login= () => {
         notify()
         axios.post("http://localhost:5000/user/auth/check-otp" , {'mobile' : requireData.mobile , code : requireData.code})
         .then(response => {
+            const accessToken = response.data.data.accessToken;
             notify("ورود شما با موفقیت انجام شد" , "success");
+            localStorage.setItem('accessToken', accessToken);
             setTimeout(() => {
                 navigate('/', { replace: true });
               }, 3000);
@@ -154,7 +156,7 @@ const Login= () => {
                     <button
                         disabled={seconds > 0 || minutes > 0}
                         style={{
-                        color: seconds > 0 || minutes > 0 ? "#DFE3E8" : "#FF5630",
+                        color: seconds > 0 || minutes > 0 ? "Black" : "#FF5630", borderRadius : "5px" , border : "none"
                         }}
                         onClick={loginSubmit}
                     >

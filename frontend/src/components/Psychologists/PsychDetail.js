@@ -41,10 +41,6 @@ const PsychDetail = (props) => {
                                     <td>{detailData.degree}</td>
                                 </tr>
                                 <tr>
-                                    <th > تخصص</th>
-                                    <td>{detailData.degree}</td>
-                                </tr>
-                                <tr>
                                     <th>آدرس</th>
                                     <td>{detailData.address}</td>
                                 </tr>
@@ -69,18 +65,7 @@ const PsychDetail = (props) => {
                         <span>{detailData.name}</span>
                         <img src={detailData.imageURL}  alt="currentImg"/>
                     </div>
-                    <div className={styles.arrows}>
-
-                            <span className={styles.right}>
-                                <span/>
-                                <i><Link to={`/psychs`} className={styles.rightArrow} /></i>
-                            </span>
-                
-                            <span className={styles.left}>
-                                <span/>
-                                <i><Link to={`/psychs`} className={styles.leftArrow} /></i>
-                            </span>
-                    </div>
+                    
                     <img src={detailData.imageURL} className={styles.nextImg} alt="nextImg"/>
                 </div>  
             </div>

@@ -14,8 +14,7 @@ import "./fonts/IRANSansWeb_Black.ttf"
 
 
 import Navbar from './components/Navbar/Navbar.js'
-import SignUp from './components/SignUp.js';
-import Login from './components/Login.js';
+import Login from './components/Login/Login.js';
 import Psychologits from './components/Psychologists/Psychologists.js';
 import Footer from './components/Footer/Footer.js';
 import PsychDetail from './components/Psychologists/PsychDetail.js';
@@ -25,6 +24,7 @@ import Podcasts from './components/Podcasts/Podcasts';
 import PodcastDetail from './components/Podcasts/PodcastDetail';
 import VideoDetail from './components/Videos/VideoDetail';
 import Videos from './components/Videos/Videos';
+import UserProfile from './components/UserProfile/UserProfile';
 // import Appointment from './components/Appointment.js';
 
 
@@ -46,7 +46,7 @@ function App() {
         <Route path='/podcasts' element={<Podcasts />} />
         <Route path='/videos/:id' element={<VideoDetail/>} />
         <Route path='/videos' element={<Videos />} />
-        <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/profile' element={<UserProfile/>} />
         <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footer /> 

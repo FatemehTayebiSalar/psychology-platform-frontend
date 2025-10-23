@@ -5,8 +5,11 @@
 }
 
 .container{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #f6f6f6;
     font-family: "Normal";
     min-height: 100vh;
     align-items: center;
@@ -15,9 +18,9 @@
 .formContainer{
     border: 1px solid silver;
     width: fit-content;
-    padding: 50px;
-    margin: 50px;
-    border-radius: 10px;
+    padding: 5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     height: fit-content;
     background-color: #151618;
 }
@@ -25,7 +28,6 @@
 .header{
     text-align: left;
     margin-bottom: 40px;
-    font-size: 1.8rem;
     color: rgb(88, 148, 90);
 }
 
@@ -167,4 +169,17 @@ input[type = "checkbox"] :focus{
     .uncompleted{
         width: 90%;
     }
+}
+
+.countdown{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.countdown p {
+    color: white;
+    font-family: "UltraLight";
+    font-size: small;
 }

@@ -15,7 +15,7 @@ const Footer = () => {
             <hr />
             <div className={styles.footerItems}>
                 <div className={styles.header}>
-                    <h1>Logo</h1>
+                    <h1>باوک</h1>
                     <button>بازگشت به بالا</button>
                 </div>
                 <div className={styles.details}>

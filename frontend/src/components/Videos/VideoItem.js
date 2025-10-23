@@ -17,7 +17,7 @@ class VideoItem extends Component {
             <div className={styles.container}>
                 <img src={coverImage} alt="VideoImage" className={styles.videoImg} />
                 <span className={styles.videoTitle}><Link to={`/videos/${id}`}>{title}</Link></span>
-                <span className={styles.videoCoach}>همراه با {coach}</span>
+                
             </div>
         );
     }
