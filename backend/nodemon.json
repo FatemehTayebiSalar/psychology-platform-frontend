@@ -1,8 +1,0 @@
-{
-    "env":{
-        "MONGO_USER":"BavakDB",
-        "MONGO_PASSWORD":"fatemeteyebi",
-        "MONGO_DB":"Bavak-DB"
-    }
-}
-
